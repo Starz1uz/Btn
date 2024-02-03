@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .col {
+                width: fit-content;
+                margin: 40px auto;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                button {
+                    all: unset;
+                    width: 200px;
+                    padding: 20px;
+                    border-radius: 12px;
+                    border: 2px solid #CFE7FF;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &.active {
+                        border-color: #007FFF;
+                    
+                    }
+                }
+
+
+            }
+            
+            .first {
+                margin-top: 50px;
+                font-size: 20px;
+                width: 200px;
+                height: 52px;
+                background-color: rgb(67, 67, 131);
+                border: none;
+                border-radius: 15px;
+                color: white;
+                /* .active {
+                        border-color: #007FFF;
+                    } */
+            }
+
+            .second {
+                margin-top: 50px;
+                font-size: 20px;
+                width: 200px;
+                height: 52px;
+                background-color: rgb(67, 67, 131);
+                border: none;
+                border-radius: 15px;
+                color: white;
+                /* &.active {
+                        border-color: #007FFF;
+                    } */
+            }
+
+
+            .active {
+                background-color: blue;
+                    }
+        </style>
+    </head>
+
+    <body>
+
+        <center>
+            <h1>price $<span id="total">2,999</span> </h1>
+        </center>
+
+        <center>
+            <button class="first" id="fr">white</button>
+            <button class="second" id="fr">space grey</button>
+        </center>
+
+        <div class="col">
+            <button data-add="0" class="active">
+                <span>512gb</span>
+                <b></b>
+            </button>
+            <button data-add="200">
+                <span>1tb</span>
+                <b>200</b>
+            </button>
+            <button data-add="600">
+                <span>2tb</span>
+                <b>600</b>
+            </button>
+            <button data-add="1200">
+                <span>4tb</span>
+                <b>1200</b>
+            </button>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>
